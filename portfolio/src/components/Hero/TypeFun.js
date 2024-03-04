@@ -5,7 +5,7 @@ const animationData = {
     '',
     1000
   ],
-  speed: 50,
+  speed: 30,
   style: { display : 'inline-block' },
   repeat: Infinity,
 };

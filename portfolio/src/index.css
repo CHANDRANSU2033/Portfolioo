@@ -6,6 +6,13 @@
   transition: 0.5s ease-in-out;
 }
 
+::selection {
+  background-color: #ffcc00; /* Change this to the color you desire */
+  color: #000; /* Change this to the text color you desire */
+}
+
 html{
   scroll-behavior: smooth;
+  caret-color: transparent;
 }
+
