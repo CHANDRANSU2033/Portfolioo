@@ -1,4 +1,3 @@
-import React from 'react'
 import { getImageUrl } from '../../utils'
 import styles from './Hero.module.css'
 
@@ -12,8 +11,8 @@ export const Hero = () => {
             <a href="mailto:ExampleEmail@gmail.com" className={styles.contactBtn}> Contact me </a>
         </div>
         <img src={getImageUrl('hero/heroImage.png')} alt='Hero Image of me' className={styles.heroImg}/> 
-        <div className={StyleSheet.topBlur}></div>
-        <div className={StyleSheet.bottomBlur}></div>
+        <div className={styles.topBlur}></div>
+        <div className={styles.bottomBlur}></div>
     </section>
   )
 }

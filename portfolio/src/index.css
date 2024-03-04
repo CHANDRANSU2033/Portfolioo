@@ -3,4 +3,9 @@
   margin : 0;
   padding : 0;
   font-family : "Outfit",Arial, Helvetica, sans-serif;
+  transition: 0.5s ease-in-out;
+}
+
+html{
+  scroll-behavior: smooth;
 }
