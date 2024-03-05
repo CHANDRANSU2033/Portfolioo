@@ -22,7 +22,8 @@ const Experience = () => {
             })
           }
           </div>
-            <ul className={styles.history}>
+          {/*Not have one know  */}
+          {/* <ul className={styles.history}>
               {
                 history.map((historyItem, Id) =>{
                   return(
@@ -41,7 +42,7 @@ const Experience = () => {
                   )
                 })
               }
-            </ul>
+            </ul> */}
           
       </div>
     </section>

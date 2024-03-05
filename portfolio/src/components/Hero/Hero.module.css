@@ -27,6 +27,7 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255,255,255,0) 120% );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    line-height: 75px;
 }
 
 .description{
@@ -107,5 +108,11 @@
 
     .content{
         align-items: center;
+    }
+}
+
+@media screen and (max-width : 500px ){
+    .title{
+        font-size: 55px;
     }
 }

@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { getImageUrl } from '../../utils'
 import styles from './Hero.module.css'
 import { TypeAnimation } from 'react-type-animation';
@@ -10,14 +9,13 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
         <div className={styles.content}>
-            <h1 className = { styles.title} >{
             <TypeAnimation
+          className = { styles.title}
           sequence={animationData.sequence}
           speed={animationData.speed}
           style={animationData.style}
           repeat={animationData.repeat}
         />
-            }</h1>
             <p className={styles.description}>I&apos;m a mern-stack developer.Reach out if you need me </p>
             <a href="mailto:ExampleEmail@gmail.com" className={styles.contactBtn}> Contact me </a>
         </div>

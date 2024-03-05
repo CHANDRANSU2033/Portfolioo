@@ -57,6 +57,8 @@
     .menuBtn{
         display: block;
         cursor : pointer;
+        position: relative;
+        left : 25px;
     }
 
     .menuItems{
@@ -74,5 +76,8 @@
     .menuOpen{
         display: flex;
         z-index : 1;  
+        position: relative;
+        left: 18vw;
+        width: 100vw;
     }
 }

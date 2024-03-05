@@ -1,23 +1,14 @@
 import React from 'react'
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { getImageUrl } from '../../utils'
-import styles from './About.module.css' 
-import MyCarousel from './MyCarousel'
+import styles from './Carousel.module.css'
 
 
-
-const About = () => {
-  return (
-    <section className={styles.container} id='about'>
-      <h2 className={styles.title}>About</h2>
-      <div className = {styles.moving}>
-        <MyCarousel/>
-      </div>
-      
-      <div className={styles.content}>
-        <img src = {getImageUrl('about/aboutImage.png')} alt = 'me sitting with a loaptop'
-        className={styles.aboutImage}
-        />
-        <ul className={styles.aboutItems}>
+const MyCarousel = () => {
+    return (
+        <Carousel nextIcon={null} prevIcon={null} className={styles.container}>
+          <Carousel.Item className={styles.aboutItems}>
           <li className={styles.aboutItem}>
             <img src = {getImageUrl('about/cursorIcon.png')} alt = 'cursor Icon'/>
             <div className={styles.aboutItemText}>
@@ -25,6 +16,8 @@ const About = () => {
               <p>I’m a front-end developer with experience in building responsive and optimized sites</p>
             </div>
           </li>
+          </Carousel.Item>
+          <Carousel.Item className={styles.aboutItems}>
           <li className={styles.aboutItem}>
             <img src = {getImageUrl('about/serverIcon.png')} alt = 'server Icon'/>
             <div className={styles.aboutItemText}> 
@@ -32,6 +25,8 @@ const About = () => {
               <p>I have experience developing fast and optimised back-end systems and APIs</p>
             </div>
           </li>
+          </Carousel.Item>
+          <Carousel.Item className={styles.aboutItems}>
           <li className={styles.aboutItem}>
             <img src = {getImageUrl('about/uiIcon.png')} alt = 'ui Icon'/>
             <div className={styles.aboutItemText}>
@@ -39,10 +34,9 @@ const About = () => {
               <p>I have designed multiple landing pages and have created design systems as well</p>
             </div>
           </li>
-        </ul>
-      </div>
-    </section>
-  )
+          </Carousel.Item>
+        </Carousel>
+      );
 }
 
-export default About
+export default MyCarousel
