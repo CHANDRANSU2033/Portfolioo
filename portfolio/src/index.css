@@ -6,6 +6,28 @@
   transition: 0.5s ease-in-out;
 }
 
+::selection {
+  background-color: #ffcc00; /* Change this to the color you desire */
+  color: #000; /* Change this to the text color you desire */
+}
+
+.light-theme{
+
+  /* Colours */
+
+  --color-text : #fff;
+  --color-primary : #576cbc;
+  --color-secondary : #19376d;
+  --color-dark : #0b2447;
+  --color-bg : #04152d;
+
+  /* Fonts */
+  --font-roboto : "Roboto";
+  --font-outfit : "outfit";
+}
+
 html{
   scroll-behavior: smooth;
+  caret-color: transparent;
 }
+

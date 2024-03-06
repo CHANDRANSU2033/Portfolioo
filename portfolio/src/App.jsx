@@ -6,6 +6,7 @@ import Experience from "./components/Experience/Experience.jsx";
 import { Project } from "./components/Project/Project.jsx";
 import { Contact } from "./components/Contact/Contact.jsx";
 
+
 const App = () => {
   return (
     <div className={styles.App}>

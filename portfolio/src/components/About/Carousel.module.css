@@ -1,0 +1,39 @@
+@import '../../vars.css';
+
+
+.container{
+    margin : 0 5%;
+}
+
+.aboutItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding : 15px;
+    /* background-image: rgba(165,215,232,0.42); */
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    transition: 0.1s ease-in;
+    color : var(--color-text);
+}
+
+.aboutItem:hover{
+    background-size: 100% 100%;
+}
+
+.aboutItem h3{
+    font-size : 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aboutItem p{
+    font-size: 25px ;
+    text-align: center;
+    height: 195px;
+}
+
+
+/*  */
