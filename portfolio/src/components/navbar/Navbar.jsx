@@ -1,11 +1,27 @@
-import React , {useState} from 'react'
+import {useState,useEffect} from 'react'
 import styles from './Navbar.module.css'
 import { getImageUrl } from '../../utils'
+// font-awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMoon, fas , faSun} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fas);
+
 
 
 export const Navbar = () => {
 
     const [menuOpen,setMenuOpen] = useState(false);
+    const [theme,setTheme] = useState('dark');
+
+    useEffect(() => {
+      document.documentElement.dataset.theme = theme;
+    }, [theme]);
+
+    const toggleTheme = () =>{
+      setTheme(theme === 'dark' ? 'light' : 'dark')
+    }
 
   return (
     <nav className={styles.navbar}>
@@ -20,6 +36,14 @@ export const Navbar = () => {
                 <li><a href = "#projects">Projects</a></li>
                 <li><a href = "#contact">Contact</a></li>
             </ul>
+            <div className={styles.icons} >
+              <FontAwesomeIcon   className={styles.icon} onClick={() => toggleTheme()} 
+                style={{display : `${theme == 'light' ? 'block' : 'none'}`}} 
+                icon={faMoon} size='2x' color='black'/>
+              <FontAwesomeIcon   className={styles.icon} onClick={() => toggleTheme()} 
+                style={{display : `${theme == 'dark' ? 'block' : 'none'}`}} 
+                icon={faSun} size='2x' color='white'/>
+            </div>
         </div>
     </nav>
   )

@@ -38,10 +38,19 @@
     display: none;
 }
 
+.icons{
+    width: 50px;
+    height: 50px;
+    position : relative;
+    left : 20px;
+}
+
+
 @media screen and (max-width : 830px){
     .navbar{
         flex-direction: column;
         align-items: flex-start;
+        margin : 0 5%;
     }
 
     .menu{
@@ -58,7 +67,8 @@
         display: block;
         cursor : pointer;
         position: relative;
-        left : 25px;
+        right : 15px;
+        
     }
 
     .menuItems{
@@ -79,5 +89,10 @@
         position: relative;
         left: 18vw;
         width: 100vw;
+    }
+
+    .icons{
+        top : -50px;
+        left : 55px;
     }
 }

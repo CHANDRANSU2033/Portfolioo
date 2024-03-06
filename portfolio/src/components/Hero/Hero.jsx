@@ -9,6 +9,7 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
         <div className={styles.content}>
+        <div className={styles.titles}>
             <TypeAnimation
           className = { styles.title}
           sequence={animationData.sequence}
@@ -16,6 +17,7 @@ export const Hero = () => {
           style={animationData.style}
           repeat={animationData.repeat}
         />
+        </div>
             <p className={styles.description}>I&apos;m a mern-stack developer.Reach out if you need me </p>
             <a href="mailto:ExampleEmail@gmail.com" className={styles.contactBtn}> Contact me </a>
         </div>

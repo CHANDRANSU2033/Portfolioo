@@ -112,7 +112,13 @@
 }
 
 @media screen and (max-width : 500px ){
+    .titles{
+        width : 90vw;
+    }
+    
     .title{
         font-size: 55px;
     }
+
+    
 }
