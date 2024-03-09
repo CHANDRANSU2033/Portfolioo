@@ -2,10 +2,12 @@
 
     
     --color-text : #fff;
-    --color-primary : #576cbc;
+    /* --color-primary : #576cbc; */
+    --color-primary : rgb(245, 87, 35);
     --color-secondary : #19376d;
     --color-dark : #0b2447;
-    --color-bg : #04152d;
+    /* --color-bg : #04152d; */
+    --color-bg : black;
 
     
     --font-roboto : "Roboto";
@@ -15,6 +17,7 @@
 
 [data-theme="light"] {
     --color-text : #020000;
+    --color-secondary-text : #020000;
     --color-primary : #576cbc;
     --color-secondary : #19376d;
     --color-dark : #0b2447;
