@@ -1,25 +1,33 @@
 :root{
 
     
-    --color-text : #fff;
+    --color-text : rgb(255, 255, 255);
+    --color-text-rgb :255,255,255;
     /* --color-primary : #576cbc; */
-    --color-primary : rgb(245, 87, 35);
+    --color-primary : #FFCE21;
     --color-secondary : #19376d;
     --color-dark : #0b2447;
     /* --color-bg : #04152d; */
     --color-bg : black;
 
     
-    --font-roboto : "Roboto";
-    --font-outfit : "outfit";
+    /* --font-roboto : "Roboto"; */
+    --font-outfit : "poppins";
+    --font-roboto : "poppins";
+    --color-blur : rgba(25,55,109,0.7);
+
 }
 
 
 [data-theme="light"] {
-    --color-text : #020000;
+    --color-text : rgb(0,0,0);
+    --color-text-rgb :0,0,0;
     --color-secondary-text : #020000;
-    --color-primary : #576cbc;
+    --color-primary : #FFCE21;
     --color-secondary : #19376d;
     --color-dark : #0b2447;
-    --color-bg : #fff; /* Dark mode text color */
+    --color-bg : #E5E6EA;
+    --color-blur :#E5E6EA ;
+    
 }
+
