@@ -30,5 +30,9 @@
   {
     "title": "GitHub",
     "imageSrc": "skills/gitHub.png"
+  },
+  {
+    "title": "BootStrap",
+    "imageSrc": "skills/bootstrap.png"
   }
 ]

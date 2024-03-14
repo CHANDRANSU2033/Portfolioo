@@ -6,6 +6,7 @@
     /* --color-primary : #576cbc; */
     --color-primary : #FFCE21;
     --color-secondary : #19376d;
+    --color-secondary-contact : #19376d;
     --color-dark : #0b2447;
     /* --color-bg : #04152d; */
     --color-bg : black;
@@ -15,6 +16,7 @@
     --font-outfit : "poppins";
     --font-roboto : "poppins";
     --color-blur : rgba(25,55,109,0.7);
+    --color-project-border : rgba(19, 42, 83,0.9);
 
 }
 
@@ -28,6 +30,10 @@
     --color-dark : #0b2447;
     --color-bg : #E5E6EA;
     --color-blur :#E5E6EA ;
+
+    --color-secondary-contact: rgba(0, 0, 0,0.1);
+
+    --color-project-border : rgba(50, 50, 93, 0.25);
     
 }
 
