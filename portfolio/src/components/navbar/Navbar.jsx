@@ -42,7 +42,7 @@ export const Navbar = () => {
                 icon={faMoon} size='2x' color='black'/>
               <FontAwesomeIcon   className={styles.icon} onClick={() => toggleTheme()} 
                 style={{display : `${theme == 'dark' ? 'block' : 'none'}`}} 
-                icon={faSun} size='2x' color='white'/>
+                icon={faSun} size='2x' color='rgb(255,197,2)'/>
             </div>
         </div>
     </nav>

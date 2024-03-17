@@ -14,20 +14,22 @@
     letter-spacing: 1.75px;
     text-transform: uppercase;
     margin-bottom: 50px;
+    text-align: center;
 }
  
 .content{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 14px;
 }
 
 .skills{
-    width : 45%;
+    width : 50%;
     display: flex;
     flex-wrap : wrap;
     gap : 40px;
+    justify-content: space-around;
 }
 
 .skill {

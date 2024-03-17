@@ -1,25 +1,25 @@
   [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "Expense Tracker",
+    "imageSrc": "projects/expensetracker.png",
+    "description": "A Expense Tracker. Easy log expenses and income with simple UI.",
+    "skills": ["React","HTML","CSS"],
+    "demo": "https://expense-tracker600.netlify.app/",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
+    "title": "Travel",
+    "imageSrc": "projects/travel.png",
+    "description": "A Travel-Website with user friendly interface and easy navigation ",
+    "skills": ["HTML","CSS","JS","BOOTSTRAP"],
+    "demo": "https://travelwebsite723.netlify.app/",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "title": "Portfolio",
+    "imageSrc": "projects/portfolio.png",
+    "description": "A Website That represents my expereinces, projects, and way to connect with me",
+    "skills": ["React", "HTML","BOOTSTRAP","CSS"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   }

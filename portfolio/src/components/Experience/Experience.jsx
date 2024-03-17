@@ -1,8 +1,6 @@
-import React from 'react'
 import styles from './Experience.module.css'
 import { getImageUrl } from '../../utils'
 import skills from '../../data/skills.json'
-import history from '../../data/history.json'
 
 const Experience = () => {
   return (
@@ -22,27 +20,6 @@ const Experience = () => {
             })
           }
           </div>
-          {/*Not have one know  */}
-          {/* <ul className={styles.history}>
-              {
-                history.map((historyItem, Id) =>{
-                  return(
-                    <li key = {Id} className={styles.historyItem}>
-                      <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} Logo`}/>
-                      <div className={styles.historyItemDetails}>
-                        <h3>{`${historyItem.role},${historyItem.organisation}`}</h3>
-                        <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                        <ul>{historyItem.experiences.map((experience,id)=>{
-                          return(
-                            <li key={id}>{experience}</li>
-                          )
-                        })}</ul>
-                      </div>
-                    </li>
-                  )
-                })
-              }
-            </ul> */}
           
       </div>
     </section>
