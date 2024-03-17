@@ -8,6 +8,7 @@
     --color-secondary : #19376d;
     --color-secondary-contact : #19376d;
     --color-dark : #0b2447;
+    --color-dark-button : #0b2447;
     /* --color-bg : #04152d; */
     --color-bg : black;
 
@@ -34,6 +35,6 @@
     --color-secondary-contact: rgba(0, 0, 0,0.1);
 
     --color-project-border : rgba(50, 50, 93, 0.25);
-    
+    --color-dark-button : rgba(11, 36, 71, 0.2);
 }
 

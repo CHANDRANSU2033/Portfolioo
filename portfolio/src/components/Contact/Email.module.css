@@ -1,0 +1,85 @@
+@import '../../vars.css';
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 100%;
+    font-family: var(--font-roboto);
+    color: var(--color-text);
+}
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 100%;
+
+}
+
+.inp div{
+    width: 100%;
+}
+
+input{
+    color: var(--color-text);
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0,31,65,0.7);
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 1px rgba(0,31,65,0.7);
+    padding: 15px;
+    font-size: 20px;
+    background: rgba(0,31,65,0.6);
+}
+
+input:focus{
+    border : 1px solid white;
+}
+
+textarea{
+    color: var(--color-text);
+    height: 140px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0,31,65,0.6);
+    background: rgba(0,31,65,0.6);
+    margin: 10px 0;
+    box-shadow: 1px 1px 1px rgba(0,31,65,0.7);
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+textarea:focus{
+    border : 1px solid white;
+}
+.submit button{
+    height: 40px;
+    width: 100px;
+    background: var(--color-primary);
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 650;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 2px #777;
+    
+
+}
+::placeholder{
+    color : var(--color-text);;
+}
+
+
+@media screen and (max-width : 830px){
+    
+    input,
+    textarea{
+        border-radius: 5px;
+    }
+}

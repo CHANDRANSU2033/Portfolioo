@@ -22,7 +22,11 @@ export const Hero = () => {
             <p className={styles.description}>I&apos;m a mern-stack developer.Reach out if you need me </p>
             <a href="mailto:ExampleEmail@gmail.com" className={`${styles.contactBtn} ${all.btn}`}> Contact me </a>
         </div>
-        <img src={getImageUrl('hero/heroImage.png')} alt='Hero Image of me' className={styles.heroImg}/> 
+    
+        <div className={styles.imgs}>
+          <img src={getImageUrl('hero/heroImage.webp')} alt='Hero Image of me' className={styles.heroImg}/>
+        </div>
+         
         <div className={styles.topBlur}></div>
         <div className={styles.bottomBlur}></div>
     </section>
