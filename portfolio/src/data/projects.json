@@ -20,7 +20,7 @@
     "imageSrc": "projects/portfolio.png",
     "description": "A Website That represents my expereinces, projects, and way to connect with me",
     "skills": ["React", "HTML","BOOTSTRAP","CSS"],
-    "demo": "portfolio31725.netlify.app",
+    "demo": "htttp://portfolio31725.netlify.app",
     "source": "https://github.com/CHANDRANSU2033/Portfolio"
   }
 ]
