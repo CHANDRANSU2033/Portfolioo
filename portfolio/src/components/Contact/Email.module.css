@@ -24,6 +24,7 @@
 
 input{
     color: var(--color-text);
+    caret-color: var(--color-text);
     height: 40px;
     width: 100%;
     outline: none;
@@ -42,6 +43,7 @@ input:focus{
 
 textarea{
     color: var(--color-text);
+    caret-color: var(--color-text);
     height: 140px;
     width: 100%;
     outline: none;

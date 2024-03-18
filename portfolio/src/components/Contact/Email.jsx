@@ -28,11 +28,20 @@ export const Email = () => {
           .then(
             () => {
               console.log('SUCCESS!');
+              setFormData({ name: '', email: '', message: '' });
             },
             (error) => {
               console.log('FAILED...', error.text);
             },
-          );
+
+          )
+          
+          setFormData({
+            name: '',
+            email: '',
+            subject:'',
+            message: ''
+          });
       };
   
   
