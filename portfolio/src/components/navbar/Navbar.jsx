@@ -23,19 +23,25 @@ export const Navbar = () => {
       setTheme(theme === 'dark' ? 'light' : 'dark')
     }
 
+
+    const closeMenuOnScroll = () => {
+      setMenuOpen(false); // Close the menu
+    };
+  
+    useEffect(() => {
+      // Attach scroll event listener to the window
+      window.addEventListener("scroll", closeMenuOnScroll);
+  
+      // Cleanup the event listener on unmount
+      return () => {
+        window.removeEventListener("scroll", closeMenuOnScroll);
+      };
+    }, []);
+
   return (
     <nav className={styles.navbar}>
         <a className={styles.title} href='/'>Portfolio</a>
         <div className={styles.menu}>
-            <img className={styles.menuBtn} src={menuOpen ? getImageUrl("nav/closeIcon.png"):getImageUrl("nav/menuIcon.png")} alt="menu-button"
-            onClick={() => setMenuOpen(!menuOpen)} />
-            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-            onClick={() => setMenuOpen(!menuOpen)}>
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#expirence">Expirence</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
             <div className={styles.icons} >
               <FontAwesomeIcon   className={styles.icon} onClick={() => toggleTheme()} 
                 style={{display : `${theme == 'light' ? 'block' : 'none'}`}} 
@@ -44,6 +50,20 @@ export const Navbar = () => {
                 style={{display : `${theme == 'dark' ? 'block' : 'none'}`}} 
                 icon={faSun} size='2x' color='rgb(255,197,2)'/>
             </div>
+
+            <img className={styles.menuBtn} src={menuOpen ? getImageUrl("nav/closeIcon.png"):getImageUrl("nav/menuIcon.png")} alt="menu-button"
+            onClick={() => setMenuOpen(!menuOpen)} />
+
+            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            
+            >
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#expirence">Expirence</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+            
         </div>
     </nav>
   )
