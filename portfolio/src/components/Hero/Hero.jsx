@@ -20,7 +20,7 @@ export const Hero = () => {
         />
         </div>
             <p className={styles.description}>I&apos;m a mern-stack developer.Reach out if you need me </p>
-            <a href="mailto:ExampleEmail@gmail.com" className={`${styles.contactBtn} ${all.btn}`}> Contact me </a>
+            <a href="mailto:chandransu.work.01@gmail.com" className={`${styles.contactBtn} ${all.btn}`}> Contact me </a>
         </div>
     
         <div className={styles.imgs}>

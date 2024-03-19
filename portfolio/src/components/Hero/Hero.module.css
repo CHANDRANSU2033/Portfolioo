@@ -19,17 +19,19 @@
     z-index : 1;
 }
 
+.titles{
+    height : 200px;
+}
 .title{
     font-size: 72px;
     font-weight : 900;
-    margin-bottom : 33px;
-    min-height: 87.2px;
+    min-height: 100px;
     font-family : var(--font-roboto);
     background: var(--color-text);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 75px;
-}
+    }
 
 .description{
     font-size: 30px;
@@ -136,19 +138,34 @@
 @media screen and (max-width : 500px ){
     .titles{
         width : 90vw;
+        height :150px;
     }
     
     .title{
-        font-size: 55px;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 0px;
+        height: 0;
+        
     }
 
     .imgs{
-        margin : 6vh 0;
+        margin : 55px 0;
         height : 200px;
     }
 
     .heroImg{
         width: 150%;
     }
+
+    .description{
+        font-size: 20px;
+    }
+
+    .contactBtn{
+        font-size : 17px;
+    }
+
+    
     
 }
