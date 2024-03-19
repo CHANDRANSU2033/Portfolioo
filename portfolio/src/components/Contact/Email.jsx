@@ -6,12 +6,13 @@ import styles from './Email.module.css'
 
 export const Email = () => {
   
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject:'',
-        message: ''
-      });
+    const Reset ={
+      name: '',
+      email: '',
+      subject:'',
+      message: ''
+    }; 
+    const [formData, setFormData] = useState(Reset);
     
       const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,12 +28,14 @@ export const Email = () => {
           })
           .then(
             () => {
+              setFormData(Reset);
               console.log('SUCCESS!');
             },
             (error) => {
               console.log('FAILED...', error.text);
+              alert('FAILED...', error.text);
             },
-          );
+          ) 
       };
   
   
@@ -45,22 +48,22 @@ export const Email = () => {
   <form  className={styles.container} onSubmit={handleSubmit}>
       <div className={styles.inp}>
           <div className={styles.name}>
-              <input type="text" name="name" id="name" placeholder="Name" required onChange={
+              <input type="text" name="name" id="name" value={formData.name} placeholder="Name" required onChange={
                  handleChange
               }/>
           </div>
           <div className={styles.email}>
-              <input type="email" name="email" id="email" placeholder="E-mail" required onChange={
+              <input type="email" name="email" id="email" value={formData.email} placeholder="E-mail" required onChange={
                  handleChange
               }/>
           </div>
           <div className={styles.subject}>
-              <input type="text" name="subject" id="subject" placeholder="Subject" required onChange={
+              <input type="text" name="subject" id="subject" value={formData.subject} placeholder="Subject" required onChange={
                  handleChange
               }/>
           </div>
           <div className={styles.message}>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Here Your Message..." required onChange={
+              <textarea name="message" id="message" value={formData.message} cols="30" rows="10" placeholder="Type Here Your Message..." required onChange={
              handleChange
               }></textarea>
           </div>

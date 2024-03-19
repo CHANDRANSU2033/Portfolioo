@@ -9,7 +9,6 @@ const animationData = {
   style: { 
     display : 'block',
     whiteSpace: 'pre-line',
-    height : '180px'
   },
   repeat: Infinity,
 };
