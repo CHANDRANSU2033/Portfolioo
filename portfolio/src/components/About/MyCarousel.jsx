@@ -26,7 +26,7 @@ const MyCarousel = () => {
             </div>
           </li>
           </Carousel.Item>
-          <Carousel.Item className={styles.aboutItems}>
+          {/* <Carousel.Item className={styles.aboutItems}>
           <li className={styles.aboutItem}>
             <img src = {getImageUrl('about/uiIcon.png')} alt = 'ui Icon'/>
             <div className={styles.aboutItemText}>
@@ -34,7 +34,7 @@ const MyCarousel = () => {
               <p>I have designed multiple landing pages and have created design systems as well</p>
             </div>
           </li>
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
       );
 }

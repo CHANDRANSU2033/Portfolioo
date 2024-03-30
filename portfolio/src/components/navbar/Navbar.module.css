@@ -1,18 +1,23 @@
 @import '../../vars.css';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 
 .navbar{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top : 61px; 
+    padding-top : 32px; 
     z-index : 2;
     margin : 0 10%;
 }
 
 .title{
-    font-size: 30px;
-    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
     text-decoration: none;
     color : var(--color-text);
 }
@@ -109,5 +114,7 @@
         padding-top: 15px;
     }
 
-    font-size: ;
+    .title{
+        font-size: 30px;
+    }
 }
