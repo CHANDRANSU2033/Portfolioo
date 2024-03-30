@@ -14,7 +14,7 @@ const About = () => {
       </div>
       
       <div className={styles.content}>
-        <img src = {getImageUrl('about/aboutImage.png')} alt = 'me sitting with a loaptop'
+        <img src = {getImageUrl('about/aboutImage1.png')} alt = 'me sitting with a loaptop'
         className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
@@ -30,13 +30,6 @@ const About = () => {
             <div className={styles.aboutItemText}> 
               <h3>BackEnd Developer</h3>
               <p>I have experience developing fast and optimised back-end systems and APIs</p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src = {getImageUrl('about/uiIcon.png')} alt = 'ui Icon'/>
-            <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
-              <p>I have designed multiple landing pages and have created design systems as well</p>
             </div>
           </li>
         </ul>

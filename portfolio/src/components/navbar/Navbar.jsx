@@ -40,7 +40,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-        <a className={styles.title} href='/'>Portfolio</a>
+        <a className={styles.title} href='/'>Chandransu</a>
         <div className={styles.menu}>
             <div className={styles.icons} >
               <FontAwesomeIcon   className={styles.icon} onClick={() => toggleTheme()} 
