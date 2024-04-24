@@ -14,7 +14,7 @@ const About = () => {
       </div>
       
       <div className={styles.content}>
-        <img src = {getImageUrl('about/aboutImage1.png')} alt = 'me sitting with a loaptop'
+        <img src = {getImageUrl('about/aboutimage1.jpg')} alt = 'me sitting with a loaptop'
         className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
